@@ -22,4 +22,6 @@ func TestPush(t *testing.T) {
 	s.Push(5)
 	s.Push(6)
 	log.Print(s)
+	var v int = s.Pop().(int)
+	log.Print(v)
 }
